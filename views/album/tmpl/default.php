@@ -8,6 +8,9 @@
 ?>
 </div>
 <div class="contentpane<?php echo $this->params->get( 'pageclass_sfx' ); ?>">
+
+<a href="<?php echo $this->album->link; ?>">Enlace externo</a>
+
 <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
 <tbody>
 <tr>
@@ -20,6 +23,7 @@
   print $item->plugin_code;
 }
  ?>
+<a href="<?php echo $item->link; ?>">Enlace externo</a>
 </li>
 <?php endforeach; ?>
 </ol>
