@@ -4,6 +4,7 @@
  * @subpackage	Album
  * @copyright	Copyright (C) 2005 - 2007 Open Source Matters. All rights reserved.
  * @copyright	Copyright (C) 2009 Daniel Scott (http://danieljamesscott.org). All rights reserved.
+ * @copyright   Copyright (C) 2012 Francisco José Rodríguez Bogado (http://qinn.es). All rights reserved. 
  * @license		GNU/GPL, see LICENSE.php
  * Joomla! is free software. This version may have been modified pursuant to the
  * GNU General Public License, and as distributed it includes or is derivative
@@ -11,6 +12,8 @@
  * source software licenses. See COPYRIGHT.php for copyright notices and
  * details.
  */
+
+// XXX: TODO: No estoy seguro de si debo hacer algo aquí para mostrar el uri a iTunes, Jamendo y compañía.
 
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die();
@@ -100,9 +103,9 @@ class MusicViewAlbum extends JView
       // Wrap the mp3 name in {$player_plugin $player_plugin_options}{/$player_plugin} tags for plugin.
       if ($song->mp3 != '') {
         // ' ' already added for options above
-	$song->plugin_code = JHTML::_('content.prepare',"{" . $pparams->get('player_plugin') . $pparams->get('player_plugin_options') . "}images/songs/" . $song->cleaned_mp3 . "{/" . $pparams->get('player_plugin') . "}");
+        $song->plugin_code = JHTML::_('content.prepare',"{" . $pparams->get('player_plugin') . $pparams->get('player_plugin_options') . "}images/songs/" . $song->cleaned_mp3 . "{/" . $pparams->get('player_plugin') . "}");
       } else {
-	$song->plugin_code = '';
+        $song->plugin_code = '';
       }
     }
 

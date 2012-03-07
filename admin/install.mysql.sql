@@ -41,6 +41,8 @@ CREATE TABLE IF NOT EXISTS `#__albums` (
   `ordering` int(11) NOT NULL default '0',
   `access` tinyint(3) unsigned NOT NULL default '0',
   `params` text NOT NULL,
+  -- XXX: By Queen
+  `link` text NOT NULL default '',
   PRIMARY KEY  (`id`),
   KEY `cat_idx` (`published`,`access`),
   KEY `idx_access` (`access`),
@@ -65,6 +67,8 @@ CREATE TABLE IF NOT EXISTS `#__songs` (
   `access` tinyint(3) unsigned NOT NULL default '0',
   `number` int(11) NOT NULL,
   `mp3` varchar(255) NOT NULL,
+  -- XXX: By Queen
+  `link` text NOT NULL default '',
   PRIMARY KEY  (`id`),
   KEY `catid` (`albumid`)
 );

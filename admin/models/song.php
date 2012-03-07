@@ -4,6 +4,7 @@
  * @subpackage	Song
  * @copyright	Copyright (C) 2005 - 2007 Open Source Matters. All rights reserved.
  * @copyright   Copyright (C) 2009 Daniel Scott (http://danieljamesscott.org). All rights reserved.
+ * @copyright   Copyright (C) 2012 Francisco José Rodríguez Bogado (http://qinn.es). All rights reserved. 
  * @license		GNU/GPL, see LICENSE.php
  * Joomla! is free software. This version may have been modified pursuant to the
  * GNU General Public License, and as distributed it includes or is derivative
@@ -356,6 +357,7 @@ class MusicModelSong extends JModel
 			$song->albumid				= 0;
 			$song->number				= 0;
 			$song->mp3				= null;
+            $song->link             = null; 
 
 			// Required fields
 			$song->published			= 0;

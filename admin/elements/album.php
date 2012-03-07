@@ -2,6 +2,7 @@
 /**
 * @package     Music
 * @copyright   Copyright (C) 2009 Daniel Scott (http://danieljamesscott.org). All rights reserved. 
+* @copyright   Copyright (C) 2012 Francisco José Rodríguez Bogado (http://qinn.es). All rights reserved.
 * @license     GNU/GPL, see LICENSE.php
 */
 

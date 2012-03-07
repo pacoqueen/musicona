@@ -139,7 +139,18 @@
 					<td >
 						<?php echo $this->lists['mp3']; ?>
 					</td>
-				</tr>				</table>
+				</tr>				
+             	<tr>
+					<td class="key">
+						<label for="link">
+							<?php echo JText::_( 'Link' ); ?>:
+						</label>
+					</td>
+					<td >
+						<input class="inputbox" type="text" name="link" id="link" value="<?php echo $this->song->link; ?>" />
+					</td>
+				</tr>
+              </table>
 			</fieldset>
 
 </div>

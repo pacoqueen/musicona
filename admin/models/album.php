@@ -333,6 +333,7 @@ class MusicModelAlbum extends JModel {
       $album->albumart_back			= null;
       $album->artistid			= 0;
       $album->description			= null;
+      $album->link                  = null;
 
       // Required fields
       $album->published			= 0;

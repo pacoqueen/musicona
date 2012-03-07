@@ -181,6 +181,17 @@
 				<textarea class="text_area" cols="44" rows="9" name="description" id="description"><?php echo $this->album->description; ?></textarea>
 			</td>
 		</tr>
+        <tr>
+        </tr>
+            <!-- XXX: By Queen -->
+            <td class="key">
+			<label for="link">
+			    <?php echo JText::_( 'Link' ); ?>:
+			</label>
+            </td>
+			<td>
+				<input class="inputbox" type="text" name="link" id="link" value="<?php echo $this->album->link; ?>" />
+			</td>
 		</table>
 	</fieldset>
 </div>

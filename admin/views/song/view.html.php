@@ -4,6 +4,7 @@
 * @subpackage  Song
 * @copyright   Copyright (C) 2005 - 2007 Open Source Matters. All rights reserved.
 * @copyright   Copyright (C) 2009 Daniel Scott (http://danieljamesscott.org). All rights reserved. 
+* @copyright   Copyright (C) 2012 Francisco José Rodríguez Bogado (http://qinn.es). All rights reserved.
 * @license		GNU/GPL, see LICENSE.php
 * Joomla! is free software. This version may have been modified pursuant
 * to the GNU General Public License, and as distributed it includes or
@@ -119,10 +120,10 @@ class MusicViewSong extends JView
                 $songFiles = JFolder::files(JPATH_SITE.DS."images".DS."songs", '.', true, true);
                 $songs = array(JHTML::_('select.option',  '', '- '. JText::_('Select Song') .' -'));
                 foreach ( $songFiles as $file ) {
-                  // Strip off root
-                  $file = str_replace(JPATH_ROOT.DS."images".DS."songs".DS, '', $file);
-		  $file = JPath::clean($file);
-		  $songs[] = JHTML::_('select.option',  $file );
+                    // Strip off root
+                    $file = str_replace(JPATH_ROOT.DS."images".DS."songs".DS, '', $file);
+		            $file = JPath::clean($file);
+		            $songs[] = JHTML::_('select.option',  $file );
                 }
                 $lists['mp3'] = JHTML::_('select.genericlist',  $songs, 'mp3', 'class="inputbox" size="1" '. null, 'value', 'text', $song->mp3 );
 
