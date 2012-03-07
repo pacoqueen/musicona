@@ -53,7 +53,7 @@
 
 <br />
 <!-- <small>--><?php /* echo JText::_('DESIGNEDBY'); // TODO: XXX: ¿Pongo BitBlue? */ ?> <!-- <a href="http://danieljamesscott.org">http://danieljamesscott.org</a></small> -->
-<input type="hidden" name="option" value="com_music" />
+<input type="hidden" name="option" value="com_musicona" />
 <input type="hidden" name="albumid" value="<?php echo $this->album->id;?>" />
 <input type="hidden" name="filter_order" value="<?php echo $this->lists['order']; ?>" />
 <input type="hidden" name="filter_order_Dir" value="" />

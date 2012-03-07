@@ -68,7 +68,7 @@ class MusicControllerSongs extends JController
 
 		// Check the table in so it can be edited.... we are done with it anyway
 		$model->checkin();
-		$link = 'index.php?option=com_music';
+		$link = 'index.php?option=com_musicona';
 		$this->setRedirect($link, $msg);
 	}
 
@@ -88,7 +88,7 @@ class MusicControllerSongs extends JController
 			echo "<script> alert('".$model->getError(true)."'); window.history.go(-1); </script>\n";
 		}
 
-		$this->setRedirect( 'index.php?option=com_music' );
+		$this->setRedirect( 'index.php?option=com_musicona' );
 	}
 
 
@@ -108,7 +108,7 @@ class MusicControllerSongs extends JController
 			echo "<script> alert('".$model->getError(true)."'); window.history.go(-1); </script>\n";
 		}
 
-		$this->setRedirect( 'index.php?option=com_music' );
+		$this->setRedirect( 'index.php?option=com_musicona' );
 	}
 
 
@@ -128,7 +128,7 @@ class MusicControllerSongs extends JController
 			echo "<script> alert('".$model->getError(true)."'); window.history.go(-1); </script>\n";
 		}
 
-		$this->setRedirect( 'index.php?option=com_music' );
+		$this->setRedirect( 'index.php?option=com_musicona' );
 	}
 
 	function cancel()
@@ -137,7 +137,7 @@ class MusicControllerSongs extends JController
 		$model = $this->getModel('song');
 		$model->checkin();
 
-		$this->setRedirect( 'index.php?option=com_music' );
+		$this->setRedirect( 'index.php?option=com_musicona' );
 	}
 
 
@@ -146,7 +146,7 @@ class MusicControllerSongs extends JController
 		$model = $this->getModel('song');
 		$model->move(-1);
 
-		$this->setRedirect( 'index.php?option=com_music');
+		$this->setRedirect( 'index.php?option=com_musicona');
 	}
 
 	function orderdown()
@@ -154,7 +154,7 @@ class MusicControllerSongs extends JController
 		$model = $this->getModel('song');
 		$model->move(1);
 
-		$this->setRedirect( 'index.php?option=com_music');
+		$this->setRedirect( 'index.php?option=com_musicona');
 	}
 
 	function saveorder()
@@ -168,7 +168,7 @@ class MusicControllerSongs extends JController
 		$model->saveorder($song_id, $order);
 
 		$msg = 'New ordering saved';
-		$this->setRedirect( 'index.php?option=com_music', $msg );
+		$this->setRedirect( 'index.php?option=com_musicona', $msg );
 	}
 }
 ?>

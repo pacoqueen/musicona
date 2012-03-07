@@ -10,7 +10,7 @@
 	JToolBarHelper::deleteList();
 	JToolBarHelper::editListX();
 	JToolBarHelper::addNewX();
-	JToolBarHelper::preferences('com_music', '360');
+	JToolBarHelper::preferences('com_musicona', '360');
 	JToolBarHelper::help( 'screen.artist' );
 ?>
 <form action="index.php" method="post" name="adminForm">
@@ -72,7 +72,7 @@
 	for ($i=0, $n=count( $this->items ); $i < $n; $i++) {
           $row = &$this->items[$i];
 
-          $link 	= JRoute::_( 'index.php?option=com_music&c=artists&task=edit&cid[]='. $row->id );
+          $link 	= JRoute::_( 'index.php?option=com_musicona&c=artists&task=edit&cid[]='. $row->id );
 
           $checked 	= JHTML::_('grid.checkedout', $row, $i);
           $published 	= JHTML::_('grid.published', $row, $i );
@@ -125,7 +125,7 @@
 </table>
 </div>
 
-<input type="hidden" name="option" value="com_music" />
+<input type="hidden" name="option" value="com_musicona" />
 <input type="hidden" name="c" value="artists" />
 <input type="hidden" name="task" value="" />
 <input type="hidden" name="boxchecked" value="0" />

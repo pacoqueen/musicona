@@ -68,7 +68,7 @@ class MusicControllerArtists extends JController
 
 		// Check the table in so it can be edited.... we are done with it anyway
 		$model->checkin();
-		$link = 'index.php?option=com_music&c=artists';
+		$link = 'index.php?option=com_musicona&c=artists';
 		$this->setRedirect($link, $msg);
 	}
 
@@ -88,7 +88,7 @@ class MusicControllerArtists extends JController
 			echo "<script> alert('".$model->getError(true)."'); window.history.go(-1); </script>\n";
 		}
 
-		$this->setRedirect( 'index.php?option=com_music&c=artists' );
+		$this->setRedirect( 'index.php?option=com_musicona&c=artists' );
 	}
 
 
@@ -108,7 +108,7 @@ class MusicControllerArtists extends JController
 			echo "<script> alert('".$model->getError(true)."'); window.history.go(-1); </script>\n";
 		}
 
-		$this->setRedirect( 'index.php?option=com_music&c=artists' );
+		$this->setRedirect( 'index.php?option=com_musicona&c=artists' );
 	}
 
 
@@ -128,7 +128,7 @@ class MusicControllerArtists extends JController
 			echo "<script> alert('".$model->getError(true)."'); window.history.go(-1); </script>\n";
 		}
 
-		$this->setRedirect( 'index.php?option=com_music&c=artists' );
+		$this->setRedirect( 'index.php?option=com_musicona&c=artists' );
 	}
 
 	function cancel()
@@ -137,7 +137,7 @@ class MusicControllerArtists extends JController
 		$model = $this->getModel('artist');
 		$model->checkin();
 
-		$this->setRedirect( 'index.php?option=com_music&c=artists' );
+		$this->setRedirect( 'index.php?option=com_musicona&c=artists' );
 	}
 
 
@@ -146,7 +146,7 @@ class MusicControllerArtists extends JController
 		$model = $this->getModel('artist');
 		$model->move(-1);
 
-		$this->setRedirect( 'index.php?option=com_music&c=artists');
+		$this->setRedirect( 'index.php?option=com_musicona&c=artists');
 	}
 
 	function orderdown()
@@ -154,7 +154,7 @@ class MusicControllerArtists extends JController
 		$model = $this->getModel('artist');
 		$model->move(1);
 
-		$this->setRedirect( 'index.php?option=com_music&c=artists');
+		$this->setRedirect( 'index.php?option=com_musicona&c=artists');
 	}
 
 	function saveorder()
@@ -168,7 +168,7 @@ class MusicControllerArtists extends JController
 		$model->saveorder($artist_id, $order);
 
 		$msg = 'New ordering saved';
-		$this->setRedirect( 'index.php?option=com_music&c=artists', $msg );
+		$this->setRedirect( 'index.php?option=com_musicona&c=artists', $msg );
 	}
 }
 ?>

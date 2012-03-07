@@ -24,8 +24,8 @@
   </uninstall>
 
   <languages>
-    <language tag="en-GB">en-GB.com_music.ini</language>
-    <language tag="es-ES">es-ES.com_music.ini</language>
+    <language tag="en-GB">en-GB.com_musicona.ini</language>
+    <language tag="es-ES">es-ES.com_musicona.ini</language>
   </languages>
 
   <files>
@@ -41,9 +41,9 @@
   <administration>
     <menu>Musicona</menu>
     <submenu>
-      <menu link="option=com_music">Songs</menu>
-      <menu link="option=com_music&amp;c=albums">Albums</menu>
-      <menu link="option=com_music&amp;c=artists">Artists</menu>
+      <menu link="option=com_musicona">Songs</menu>
+      <menu link="option=com_musicona&amp;c=albums">Albums</menu>
+      <menu link="option=com_musicona&amp;c=artists">Artists</menu>
     </submenu>
 
     <files folder="admin">

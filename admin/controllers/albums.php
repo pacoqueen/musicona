@@ -69,7 +69,7 @@ class MusicControllerAlbums extends JController
 
 		// Check the table in so it can be edited.... we are done with it anyway
 		$model->checkin();
-		$link = 'index.php?option=com_music&c=albums';
+		$link = 'index.php?option=com_musicona&c=albums';
 		$this->setRedirect($link, $msg);
 	}
 
@@ -89,7 +89,7 @@ class MusicControllerAlbums extends JController
 			echo "<script> alert('".$model->getError(true)."'); window.history.go(-1); </script>\n";
 		}
 
-		$this->setRedirect( 'index.php?option=com_music&c=albums' );
+		$this->setRedirect( 'index.php?option=com_musicona&c=albums' );
 	}
 
 
@@ -109,7 +109,7 @@ class MusicControllerAlbums extends JController
 			echo "<script> alert('".$model->getError(true)."'); window.history.go(-1); </script>\n";
 		}
 
-		$this->setRedirect( 'index.php?option=com_music&c=albums' );
+		$this->setRedirect( 'index.php?option=com_musicona&c=albums' );
 	}
 
 
@@ -129,7 +129,7 @@ class MusicControllerAlbums extends JController
 			echo "<script> alert('".$model->getError(true)."'); window.history.go(-1); </script>\n";
 		}
 
-		$this->setRedirect( 'index.php?option=com_music&c=albums' );
+		$this->setRedirect( 'index.php?option=com_musicona&c=albums' );
 	}
 
 	function cancel()
@@ -138,7 +138,7 @@ class MusicControllerAlbums extends JController
 		$model = $this->getModel('album');
 		$model->checkin();
 
-		$this->setRedirect( 'index.php?option=com_music&c=albums' );
+		$this->setRedirect( 'index.php?option=com_musicona&c=albums' );
 	}
 
 
@@ -147,7 +147,7 @@ class MusicControllerAlbums extends JController
 		$model = $this->getModel('album');
 		$model->move(-1);
 
-		$this->setRedirect( 'index.php?option=com_music&c=albums');
+		$this->setRedirect( 'index.php?option=com_musicona&c=albums');
 	}
 
 	function orderdown()
@@ -155,7 +155,7 @@ class MusicControllerAlbums extends JController
 		$model = $this->getModel('album');
 		$model->move(1);
 
-		$this->setRedirect( 'index.php?option=com_music&c=albums');
+		$this->setRedirect( 'index.php?option=com_musicona&c=albums');
 	}
 
 	function saveorder()
@@ -169,7 +169,7 @@ class MusicControllerAlbums extends JController
 		$model->saveorder($album_id, $order);
 
 		$msg = 'New ordering saved';
-		$this->setRedirect( 'index.php?option=com_music&c=albums', $msg );
+		$this->setRedirect( 'index.php?option=com_musicona&c=albums', $msg );
 	}
 }
 ?>

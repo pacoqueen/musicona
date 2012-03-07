@@ -41,7 +41,7 @@
 </table>
 <br />
     <small><?php echo JText::_('DESIGNEDBY');?><a href="http://danieljamesscott.org">http://danieljamesscott.org</a></small>
-<input type="hidden" name="option" value="com_music" />
+<input type="hidden" name="option" value="com_musicona" />
 <input type="hidden" name="artistid" value="<?php echo $this->artist->id;?>" />
 <input type="hidden" name="filter_order" value="<?php echo $this->lists['order']; ?>" />
 <input type="hidden" name="filter_order_Dir" value="" />

@@ -10,7 +10,7 @@
 	JToolBarHelper::deleteList();
 	JToolBarHelper::editListX();
 	JToolBarHelper::addNewX();
-	JToolBarHelper::preferences('com_music', '360');
+	JToolBarHelper::preferences('com_musicona', '360');
 	JToolBarHelper::help( 'screen.song' );
 ?>
 <form action="index.php" method="post" name="adminForm">
@@ -80,7 +80,7 @@
 	{
 		$row = &$this->items[$i];
 
-				$link 	= JRoute::_( 'index.php?option=com_music&view=song&task=edit&cid[]='. $row->id );
+				$link 	= JRoute::_( 'index.php?option=com_musicona&view=song&task=edit&cid[]='. $row->id );
 
 				$checked 	= JHTML::_('grid.checkedout',   $row, $i );
 				//				$access 	= JHTML::_('grid.access',   $row, $i );
@@ -88,7 +88,7 @@
 
 				$ordering = ($this->lists['order'] == 'a.ordering');
 
-				$row->album_link 	= JRoute::_( 'index.php?option=com_music&c=albums&task=edit&cid[]='. $row->albumid );
+				$row->album_link 	= JRoute::_( 'index.php?option=com_musicona&c=albums&task=edit&cid[]='. $row->albumid );
 				//				$row->user_link	= JRoute::_( 'index.php?option=com_users&task=editA&song_id[]='. $row->user );
 				?>
 				<tr class="<?php echo "row$k"; ?>">
@@ -144,7 +144,7 @@
 	</table>
 </div>
 
-<input type="hidden" name="option" value="com_music" />
+<input type="hidden" name="option" value="com_musicona" />
 <input type="hidden" name="task" value="" />
 <input type="hidden" name="boxchecked" value="0" />
 <input type="hidden" name="filter_order" value="<?php echo $this->lists['order']; ?>" />

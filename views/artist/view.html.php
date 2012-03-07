@@ -33,7 +33,7 @@ class MusicViewArtist extends JView
     $model	= &$this->getModel();
     $document	=& JFactory::getDocument();
 
-    $pparams = &JComponentHelper::getParams('com_music');
+    $pparams = &JComponentHelper::getParams('com_musicona');
 
     // Selected Request vars
     $artistId		= JRequest::getVar('artist_id',0,'', 'int');
@@ -87,7 +87,7 @@ class MusicViewArtist extends JView
     //prepare albums
     $k = 0;
     for($i = 0; $i <  count( $albums ); $i++) {
-	$albums[$i]->album_link = JRoute::_('index.php?option=com_music&view=album&album_id=' . $albums[$i]->id);
+	$albums[$i]->album_link = JRoute::_('index.php?option=com_musicona&view=album&album_id=' . $albums[$i]->id);
 	$albums[$i]->album_name = $albums[$i]->name;
     // TODO: XXX: ¿Debo mostrar el enlace aquí?
     }

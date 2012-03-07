@@ -36,7 +36,7 @@ class MusicViewAlbum extends JView
     $model	= &$this->getModel();
     $document	=& JFactory::getDocument();
 
-    $pparams = &JComponentHelper::getParams('com_music');
+    $pparams = &JComponentHelper::getParams('com_musicona');
 
     // Selected Request vars
     $albumId		= JRequest::getVar('album_id',0,'', 'int');
@@ -88,7 +88,7 @@ class MusicViewAlbum extends JView
     $k = 0;
     for($i = 0; $i <  count( $songs ); $i++) {
       $song =& $songs[$i];
-      //			$song->link	   = JRoute::_('index.php?option=com_music&view=song&id='.$song->slug);
+      //			$song->link	   = JRoute::_('index.php?option=com_musicona&view=song&id='.$song->slug);
       $song->odd   = $k;
       $song->count = $i;
       $k = 1 - $k;
