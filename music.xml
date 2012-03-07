@@ -8,7 +8,7 @@
   <authorUrl>http://qinn.es</authorUrl>
   <copyright>Francisco José Rodríguez Bogado 2012</copyright>
   <license>GPL V3 or later</license>
-  <version>0.3b</version>
+  <version>0.7b</version>
   <description>Musicona component (forked from Music manager component)</description>
 
   <install>
@@ -32,6 +32,7 @@
     <filename>index.html</filename>
     <filename>controller.php</filename>
     <filename>music.php</filename>
+    <filename>musicona.php</filename>
     <folder>models</folder>
     <filename>router.php</filename>
     <filename>metadata.xml</filename>
@@ -49,6 +50,7 @@
     <files folder="admin">
       <folder>tables</folder>
       <filename>music.php</filename>
+      <filename>musicona.php</filename>
       <folder>elements</folder>
       <folder>models</folder>
       <folder>views</folder>
