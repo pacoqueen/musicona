@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>Discazo</name>
+
+  <creationDate>Mar 2012</creationDate>
+  <author>Francisco José Rodríguez Bogado</author>
+  <authorEmail>bogado@qinn.es</authorEmail>
+  <authorUrl>http://qinn.es</authorUrl>
+  <copyright>Francisco José Rodríguez Bogado 2012</copyright>
+  <license>GPL V3 or later</license>
+  <version>0.1</version>
+  <description>Discazo module (forked from Album module) - displays a list of albums</description>
+
+  <files>
+    <filename module="mod_album">mod_album.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+  </files>
+  <params>
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="albumcount" type="text" default="3" label="LABEL ALBUM COUNT" description="DESC ALBUM COUNT" />
+  </params>
+</install>
