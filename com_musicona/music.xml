@@ -37,6 +37,7 @@
     <filename>router.php</filename>
     <filename>metadata.xml</filename>
     <folder>views</folder>
+    <folder>images</folder>
   </files>
 
   <administration>

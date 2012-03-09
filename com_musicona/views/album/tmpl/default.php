@@ -9,7 +9,9 @@
 </div>
 <div class="contentpane<?php echo $this->params->get( 'pageclass_sfx' ); ?>">
 
-<a href="<?php echo $this->album->link; ?>">Enlace externo</a>
+<div class="iTunes">
+    <a href="<?php echo $this->album->link; ?>"><img src="components/com_musicona/images/iTunes.gif" alt="Enlace al disco"/></a>
+</div>
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
 <tbody>
@@ -23,7 +25,9 @@
   print $item->plugin_code;
 }
  ?>
-<a href="<?php echo $item->link; ?>">Enlace externo</a>
+<div class="iTunes">
+    <a href="<?php echo $item->link; ?>"><img src="components/com_musicona/images/iTunes.gif" alt="Enlace al disco"/></a>
+</div>
 </li>
 <?php endforeach; ?>
 </ol>
