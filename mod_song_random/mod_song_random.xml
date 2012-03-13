@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>Random Song</name>
+
+  <creationDate>May 2009</creationDate>
+  <author>Daniel Scott</author>
+  <authorEmail>dan@danieljamesscott.orf</authorEmail>
+  <authorUrl>http://danieljamesscott.org</authorUrl>
+  <copyright>Copyright Daniel Scott 2009</copyright>
+  <license>GPL V3 or later</license>
+  <version>0.3</version>
+  <description>Random song module which displays a random song from a particular album or all albums</description>
+
+  <files>
+    <filename module="mod_song_random">mod_song_random.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+  </files>
+  <params>
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="albumid" type="text" default="" label="LABEL SONG RANDOM ALBUM ID" description="DESC SONG RANDOM ALBUM ID - BLANK FOR ALL" />
+    <param name="show_player_plugin" type="radio" default="0" label="Show player plugin" description="Player Plugin" >
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="player_plugin" type="text" default="play"
+           label="Plugin code for the MP3 player" description="The
+           plugin code used to wrap the MP3 filename" />
+    <param name="player_plugin_options" type="text" default=""
+           label="Plugin options for the MP3 player" description="The
+           plugin options used in the MP3 player" />
+  </params>
+</install>
