@@ -9,9 +9,7 @@
 </div>
 <div class="contentpane<?php echo $this->params->get( 'pageclass_sfx' ); ?>">
 
-<div class="iTunes">
-    <a href="<?php if (strlen($this->album->link) > 0) echo $this->album->link; else echo "<p>LA CHATUNGA</p>"; ?>"><img src="components/com_musicona/images/iTunes.gif" alt="Enlace al disco"/></a>
-</div>
+<?php if (strlen($this->album->link) > 0) echo '<div class="iTunes"><a href="' . $this->album->link . '"><img src="components/com_musicona/images/iTunes.gif" alt="Enlace al disco"/></a></div>'; ?>
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
 <tbody>
@@ -21,13 +19,14 @@
 <?php foreach($this->items as $item) : ?>
 <li>
 <a href="images/songs/<?php echo $item->mp3; ?>" ><?php echo $item->name; ?></a>
-<?php if ($this->params->get('show_player_plugin')) {
-  print $item->plugin_code;
-}
- ?>
-<div class="iTunes">
-    <a href="<?php if (strlen($item->link) > 0) echo $item->link;  else echo "<p>LA CHATUNGA</p>";?>"><img src="components/com_musicona/images/iTunes.gif" alt="Enlace a la canción"/></a>
-</div>
+<?php 
+    if ($this->params->get('show_player_plugin')) {
+        print $item->plugin_code;
+    }
+    if (strlen($item->link) > 0){
+        echo '<div class="iTunes"><a href="' . $item->link . '"><img src="components/com_musicona/images/iTunes.gif" alt="Enlace a la canción"/></a></div>';
+    }
+?>
 </li>
 <?php endforeach; ?>
 </ol>
