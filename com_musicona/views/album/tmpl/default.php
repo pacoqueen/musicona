@@ -10,7 +10,7 @@
 <div class="contentpane<?php echo $this->params->get( 'pageclass_sfx' ); ?>">
 
 <div class="iTunes">
-    <a href="<?php echo $this->album->link; ?>"><img src="components/com_musicona/images/iTunes.gif" alt="Enlace al disco"/></a>
+    <a href="<?php if (strlen($this->album->link) > 0) echo $this->album->link; else echo "<p>LA CHATUNGA</p>"; ?>"><img src="components/com_musicona/images/iTunes.gif" alt="Enlace al disco"/></a>
 </div>
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
@@ -26,7 +26,7 @@
 }
  ?>
 <div class="iTunes">
-    <a href="<?php echo $item->link; ?>"><img src="components/com_musicona/images/iTunes.gif" alt="Enlace al disco"/></a>
+    <a href="<?php if (strlen($item->link) > 0) echo $item->link;  else echo "<p>LA CHATUNGA</p>";?>"><img src="components/com_musicona/images/iTunes.gif" alt="Enlace a la canción"/></a>
 </div>
 </li>
 <?php endforeach; ?>
