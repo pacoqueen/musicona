@@ -1,8 +1,8 @@
 <?php defined('_JEXEC') or die('Restricted access'); // no direct access ?>
 <ul>
 <?php foreach ($items as $item) { ?>
- <li>
+  <li>
     <a href="<?php echo $item->link; ?>" ><?php echo $item->name; ?></a>
-    </li>
+  </li>
 <?php } ?>
 </ul>

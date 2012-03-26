@@ -16,7 +16,9 @@ class ModAlbumHelper {
     $items = ($items = $db->loadObjectList())?$items:array();
 
     for ( $item = 0; $item < sizeof($items); $item++ ) {
-      $items[$item]->link = JRoute::_('index.php?option=com_musicona&view=album&cid=' . $items[$item]->id);
+      //              http://localhost/index.php?option=com_musicona&view=album&album_id=1&Itemid=10
+      $items[$item]->link = JRoute::_('index.php?option=com_musicona&view=album&album_id=' . $items[$item]->id);
+      // $items[$item]->link = JRoute::_('index.php?option=com_musicona&view=album&cid=' . $items[$item]->id);
     }
 
     return $items;
