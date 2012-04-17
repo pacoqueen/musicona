@@ -7,7 +7,7 @@
     $results = $db->loadObjectList();
     if (count($results)){
         foreach($results as $r){
-            if ($r->albumart_front != ""){
+            if ($r->albumart_front){
                 echo "<div class=albumart_random>"; 
                 echo '<img src="images/albumart/' . $r->albumart_front . '" hspace="6" height="100px" width="100px" alt="'. $r->album->name . ' ' . JText::_( 'Front Albumart' ) . '" />'; 
                 echo "</div>";
