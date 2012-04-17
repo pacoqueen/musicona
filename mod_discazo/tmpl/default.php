@@ -2,7 +2,11 @@
 <ul>
 <?php foreach ($items as $item) { ?>
   <li>
-    <a href="<?php echo $item->link; ?>" ><?php echo $item->name; ?></a>
+    <?php
+        if ($r->albumart_front){
+	    echo '<a href="'.$item->link.'><img src="images/albumart/'.$item->albumart_front.'" hspace="6" height="100px" width="100px" alt="'.$item->name.' '.JText::_( 'Front Albumart' ).'"/></a>';
+        }
+    ?>
   </li>
 <?php } ?>
 </ul>
